@@ -1,4 +1,4 @@
-#Tidy Tuesday code and plots
+# Tidy Tuesday code and plots
 
 [2020-02-04 NFL data](https://github.com/ichisa/TidyTuesday/tree/master/2020-02-03-NFL)
 
