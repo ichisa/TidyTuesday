@@ -1,0 +1,49 @@
+---
+title: "Animal Crossing - New Horizons"
+author: "Elisa"
+date: "5 May 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+I decided to try some text analysis. I googled a bit and found that of course there are already R packages that do all the work for you, like the `sentimentr`package. 
+
+I found an [example](https://towardsdatascience.com/doing-your-first-sentiment-analysis-in-r-with-sentimentr-167855445132)
+
+```{r}
+# install.packages("sentimentr")
+require(sentimentr)
+
+```
+
+Load the data from Github
+
+```{r}
+
+
+user_reviews <- readr::read_tsv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-05-05/user_reviews.tsv')
+
+critic_reviws <- readr::read_tsv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2020/2020-05-05/critic.tsv')
+
+
+```
+
+
+Now run sentiment analysis for both groups of reviws
+
+```{r}
+
+# this lines take some time
+sentiment_users <- sentiment_by(user_reviews$text)
+sentiment_critic <- sentiment_by(critic_reviews$text)
+
+
+head(sentiment_users)
+
+head(sentiment_critic)
+
+```
+
