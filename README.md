@@ -13,4 +13,4 @@ Understanding the distribution of the team's characteristics. Results are not su
 
 Word Clouds of african names from people that arrived to USA
 
-<img src="https://github.com/ichisa/TidyTuesday/blob/master/2020-8/.PNG" width="600" />
+<img src="https://github.com/ichisa/TidyTuesday/blob/master/2020-8/plot.jpeg" width="600" />
