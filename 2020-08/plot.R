@@ -42,7 +42,7 @@ p1
 
 # Image
 
-l1 <- grid::rasterGrob(png::readPNG("figures/penguins.png"), 
+l1 <- grid::rasterGrob(png::readPNG("fig/penguins.png"), 
                       interpolate = TRUE)
 
 p2 <- ggplot(mapping = aes(x = 0:1, y = 0:1)) +
